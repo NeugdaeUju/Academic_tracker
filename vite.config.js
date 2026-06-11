@@ -8,12 +8,12 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 export default defineConfig({
   plugins: [
     vue(),
-    vueDevTools(),
+    ...(process.env.NODE_ENV !== 'production' ? [vueDevTools()] : []),
   ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  base : '/Academic-tracker/',
+  base : process.env.NODE_ENV === 'production' ? '/Academic-tracker/' : '/',
 })

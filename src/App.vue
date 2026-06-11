@@ -18,13 +18,13 @@
 
     <div class="images">
       <Transition name="fade" appear>
-        <img class='image-vue-1' src="./assets/Desktop - 2.png" alt="images de la maquettes du site">
+        <img class='image-vue-1' src="./assets/Desktop-2.png" alt="images de la maquettes du site">
       </Transition>
       <Transition name="fade2" appear>
-        <img class="image-vue-2" src="./assets/Desktop - 1.jpg" alt="image numéro 2 de la maquette du site">
+        <img class="image-vue-2" src="./assets/Desktop-1.jpg" alt="image numéro 2 de la maquette du site">
       </Transition>
       <Transition name="fade3" appear>
-        <img class="image-vue-3" src="./assets/Desktop - 3.png" alt="image numéro 3 de la maquette du site">
+        <img class="image-vue-3" src="./assets/Desktop-3.png" alt="image numéro 3 de la maquette du site">
       </Transition>
     </div>
   </main>
