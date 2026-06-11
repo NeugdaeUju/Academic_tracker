@@ -4,6 +4,10 @@
   --black : #0F0F13;
   --white : #E8E8F0;
   --grey : #44445A;
+  --violet : #7C6EF0;
+  --vert : #3BBFA8;
+  --orange : #EF9F27;
+
 }
 
 *,
@@ -18,10 +22,12 @@ body {
   background-color: #e3deda;
   font-family : 'Work Sans', sans-serif;
   font-weight : 500;
+  color : var(--black);
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family : 'Playwrite GB J', serif;
+  color : var(--text-color);
 }
 
 a {
