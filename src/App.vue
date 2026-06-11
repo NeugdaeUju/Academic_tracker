@@ -35,15 +35,11 @@
 header{
   /*height : 80px;*/
   border-bottom : 1px solid var(--text-color);
-  padding : 10px;
+  padding : 20px 80px;
 }
 .titre {
   color : #977f3f;
   margin-bottom : 12px;
-}
-
-.subtitles {
-  padding-bottom : 8px;
 }
 
 main {
