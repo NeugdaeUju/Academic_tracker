@@ -3,7 +3,8 @@
   --text-color : #977f3f;
   --black : #0F0F13;
   --white : #E8E8F0;
-  --grey : #44445A;
+  --grey1 : #888780;
+  --grey2 : #7B7B7A;
   --violet : #7C6EF0;
   --vert : #3BBFA8;
   --orange : #EF9F27;
@@ -19,7 +20,7 @@
 }
 
 body {
-  background-color: #e3deda;
+  background-color: #fff;
   font-family : 'Work Sans', sans-serif;
   font-weight : 400;
   color : var(--black);
