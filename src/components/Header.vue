@@ -1,4 +1,7 @@
 <script setup>
+import { ref } from 'vue'
+
+const activeItem = ref(0)
 </script>
 
 <template>
@@ -14,9 +17,9 @@
     <nav>
       <h2 class="titre-section">FORMATIONS</h2>
       <ul class="liste-nav">
-        <li class="item active"><div class="mark"></div>L3 Gestion FAD</li>
-        <li class="item"><div class="mark"></div>M1 PME & Entrepr.</li>
-        <li class="item"><div class="mark"></div>M2 MAE</li>
+        <li class="item color1" :class="{ active : activeItem === 0}" @click="activeItem = 0"><div class="mark"></div>L3 Gestion FAD</li>
+        <li class="item color2" :class="{ active : activeItem === 1}" @click="activeItem = 1"><div class="mark"></div>M1 PME & Entrepr.</li>
+        <li class="item color3" :class="{ active : activeItem === 2}" @click="activeItem = 2"><div class="mark"></div>M2 MAE</li>
       </ul>
     </nav>
 
@@ -121,11 +124,20 @@ li::marker {
   background-color: var(--orange);
 }
 
-.active {
+.active.color1 {
   background-color: #EEEDFE;
   border-left : 3px solid var(--violet);
 }
 
+.active.color2 {
+  background-color: #DBEFCA;
+  border-left : 3px solid var(--vert);
+}
+
+.active.color3 {
+  background-color: #EAD5B7;
+  border-left : 3px solid var(--orange);
+}
 
 /* Block progression globale */
 
